@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Hotel | Booking</title>
+
+    <style>
+
+    .main-div{
+        max-width: 600px;
+        margin: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 0%;
+        padding-left: 10%;
+        
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body style="background:url(img/booking.jpg);">
+  
+
+    <div class="container-fluid main-div">
+        <div style="padding-bottom: 10px; text-align: center;"><h1>Book Your Room Now!</h1></div>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">First Name</label>
+              <input required type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label  class="form-label">Last Name</label>
+              <input required type="text" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email Id</label>
+              <input required type="email" class="form-control" id="inputAddress" placeholder="abc@gmail.com">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Mobile number</label>
+                <input required type="number" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Aadhaar number</label>
+                <input required type="number" class="form-control" id="inputAddress">
+              </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address </label>
+              <input required type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input required type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Chhattisgarh</option>
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>
+                <option>Odisha</option>
+                <option>Punjab	</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Uttar Pradesh</option>
+                <option>Uttarakhand</option>
+                <option>West Bengal</option>
+               
+
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input required type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input required class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Pay at Hotel
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <center><button type="submit" class="btn btn-success">Book Now</button></center>
+            </div>
+          </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script>
+            function book()
+            {
+                alert("your Room is booked succesfully!");
+            }
+        </script>
+</body>
+
+</html>

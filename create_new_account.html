@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new account</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        .mydiv{
+            width: fit-content;
+             border: 0px;
+              border-color: black;
+              border-radius: 15px;
+              padding: 20px;
+              padding-left: 100px;
+              padding-right: 100px;
+              margin-top: 30px
+              
+        }
+
+         #background{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/loginbackground.jpg);
+        background-size: 100%; 
+        
+        }
+
+        #div-back{
+            background-color: azure;
+        }
+
+        .text-color{
+            background-color: hsla(0,0%,100%,.1);
+    }
+    button{
+        padding: 50px;
+        margin: 20px;
+    }
+    </style>
+    
+
+
+</head>
+<body id="background">
+    <div class="container-fluid mydiv" id="div-back">
+        <div><h3>CREATE NEW ACCOUNT</h3></div><br>
+        <form>
+            <div class="mb-3 text-color">
+              <label for="exampleInputEmail1" class="form-label">Full name</label>
+              <input required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Email</label>
+              <input required type="email" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mobile number</label>
+                <input required type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">password</label>
+                <input required type="password" class="form-control" id="pass1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Re-type password</label>
+                <input required type="password" class="form-control" id="pass2" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">City</label>
+                <input required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              
+            
+            <center>
+                <button type="submit" class="btn btn-primary" onclick="validatePassword();">Create new Account</button>
+                <a href="login.html"  class="btn btn-primary" style="background-color: green;">Already have a Account</a>
+            </center>
+          </form>
+    </div>
+
+
+    <script type="text/javascript">
+
+      function validatePassword()
+      {
+        var pass = document.getElementById("pass1");
+        var pass2 = document.getElementById("pass2");
+        
+        if(pass == pass2)
+          {
+            alert("Account created Succefully");
+          }
+        else
+          {
+          alert("Both passwords should be same");
+          }
+      }
+      
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
